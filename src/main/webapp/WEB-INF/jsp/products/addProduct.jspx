@@ -16,7 +16,20 @@
         <form action="products" method="post" role="form" id="input">
             <fieldset>
                 <legend>Product</legend>
-               
+                    <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="productName" /></td>
+                    </tr>
+                    <tr>
+                        <td>Price:</td>
+                        <td><input type="text" name="productPrice" /></td>
+                    </tr> 
+                    <tr>
+                        <td><input type="submit" name="addProduct" value="Add Product" /></td>
+                        <td></td>
+                    </tr>
+                </table>
             </fieldset>
         </form> 
     </section>

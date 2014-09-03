@@ -15,7 +15,22 @@
         <form action="products" method="post" role="form" id="input">
             <fieldset>
                 <legend>Product</legend>
-               
+                <table>
+                    <c:forEach items="${PRODUCT_LIST}" var="item">
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="productName" value="${item.getName()}" disabled="true"/></td>
+                    </tr>
+                    <tr>
+                        <td>Price:</td>
+                        <td><input type="text" name="productPrice" value="${item.getPrice()}" disabled="true"/></td>
+                    </tr> 
+                    <tr>
+                        <td><input type="submit" name="delProduct" value="Delete" /></td>
+                        <td></td>
+                    </tr>
+                    </c:forEach>
+                </table>
             </fieldset>
         </form>        
     </section>
